@@ -27,7 +27,9 @@ export const navbarStyles = {
 
 export const aboutMeStyles = {
   h1: {
-    textAlign: "center",
     justifyContent: "center",
+  },
+  box: {
+    alignItems: "center",
   },
 };
