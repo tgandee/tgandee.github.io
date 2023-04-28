@@ -1,18 +1,17 @@
 import { Avatar, Box, Typography, Divider } from "@mui/material";
-import image from "./tyler.jpg";
+import image from "./tyler-square.jpg";
 
 const padding = 3;
 
 const TitleCard = () => {
-
-    return (
-<>
-        <Box align="center" sx={{ p: padding }}>
+  return (
+    <>
+      <Box align="center" sx={{ p: padding }}>
         <Avatar
           alt="Tyler Gandee"
           src={image}
-          sx={{ width: 256, height: 256 }}>
-        </Avatar>
+          sx={{ width: 256, height: 256 }}
+        ></Avatar>
       </Box>
 
       <Typography variant="h1" padding={padding}>
@@ -20,8 +19,8 @@ const TitleCard = () => {
       </Typography>
 
       <Divider />
-      </>
-    );
+    </>
+  );
 };
 
 export default TitleCard;
