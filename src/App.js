@@ -1,14 +1,14 @@
 import * as React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
-import Grid from "@mui/material/Grid";
+import { Box } from "@mui/material";
 
 function App() {
   return (
-    <Grid container>
+    <Box container sx={{ display: 'flex' }}>
       <Navbar />
       <Outlet />
-    </Grid>
+    </Box>
   );
 }
 

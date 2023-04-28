@@ -1,4 +1,3 @@
-import PeopleIcon from "@mui/icons-material/People";
 import ImageIcon from "@mui/icons-material/Image";
 import PublicIcon from "@mui/icons-material/Public";
 import PersonIcon from "@mui/icons-material/Person";
@@ -6,7 +5,7 @@ import SettingsEthernetIcon from "@mui/icons-material/SettingsEthernet";
 import SettingsInputComponentIcon from "@mui/icons-material/SettingsInputComponent";
 import DnsIcon from "@mui/icons-material/Dns";
 import AboutMe from "../../../pages/AboutMe/AboutMe";
-import Authentication from "../../../pages/Authentication/Authentication";
+import Cv from "../../../pages/Cv/Cv";
 import MachineLearning from "../../../pages/MachineLearning/MachineLearning";
 import Hosting from "../../../pages/Hosting/Hosting";
 import Home from "../../../pages/Home/Home";
@@ -16,6 +15,7 @@ import Storage from "../../../pages/Storage/Storage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import WorkIcon from '@mui/icons-material/Work';
 
 var i = 0;
 
@@ -48,10 +48,10 @@ export const mainNavbarItems = [
   },
   {
     id: i++,
-    icon: <PeopleIcon />,
-    element: <Authentication />,
-    label: "Authentication",
-    route: "authentication",
+    icon: <WorkIcon />,
+    element: <Cv />,
+    label: "CV",
+    route: "cv",
   },
   {
     id: i++,
