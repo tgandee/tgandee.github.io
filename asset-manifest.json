@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.8ff7d31f.js",
-    "static/js/787.9e995f77.chunk.js": "/static/js/787.9e995f77.chunk.js",
+    "main.js": "/static/js/main.e6c998f7.js",
+    "static/js/787.335507fe.chunk.js": "/static/js/787.335507fe.chunk.js",
+    "static/media/miami.jpg": "/static/media/miami.cd794f4db441a4b01d87.jpg",
     "static/media/tyler-square.jpg": "/static/media/tyler-square.a71a6910d7530fa2d2d3.jpg",
+    "static/media/camelback.jpg": "/static/media/camelback.42405625cd234ab33acf.jpg",
+    "static/media/golf.jpg": "/static/media/golf.10da5351c18bca7be7a5.jpg",
+    "static/media/cavaliers.jpg": "/static/media/cavaliers.11b9171177151306d8b3.jpg",
+    "static/media/cincinnati.jpg": "/static/media/cincinnati.f093c1ecbb0c38705d3b.jpg",
+    "static/media/gaming.jpeg": "/static/media/gaming.048c8ffdc99847c4e001.jpeg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.8ff7d31f.js.map": "/static/js/main.8ff7d31f.js.map",
-    "787.9e995f77.chunk.js.map": "/static/js/787.9e995f77.chunk.js.map"
+    "main.e6c998f7.js.map": "/static/js/main.e6c998f7.js.map",
+    "787.335507fe.chunk.js.map": "/static/js/787.335507fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8ff7d31f.js"
+    "static/js/main.e6c998f7.js"
   ]
 }
