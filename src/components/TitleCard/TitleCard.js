@@ -3,7 +3,9 @@ import image from "./tyler-square.jpg";
 
 const padding = 3;
 
-const TitleCard = () => {
+const TitleCard = ({ title }) => {
+  var d = "Tyler John Gandee";
+  title = title ?? d;
   return (
     <>
       <Box align="center" sx={{ p: padding }}>
@@ -15,7 +17,7 @@ const TitleCard = () => {
       </Box>
 
       <Typography variant="h1" padding={padding}>
-        Tyler John Gandee
+        {title}
       </Typography>
 
       <Divider />

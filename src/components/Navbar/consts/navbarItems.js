@@ -1,21 +1,22 @@
-import ImageIcon from "@mui/icons-material/Image";
-import PublicIcon from "@mui/icons-material/Public";
+// import ImageIcon from "@mui/icons-material/Image";
+// import PublicIcon from "@mui/icons-material/Public";
 import PersonIcon from "@mui/icons-material/Person";
-import SettingsEthernetIcon from "@mui/icons-material/SettingsEthernet";
-import SettingsInputComponentIcon from "@mui/icons-material/SettingsInputComponent";
-import DnsIcon from "@mui/icons-material/Dns";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
+// import SettingsEthernetIcon from "@mui/icons-material/SettingsEthernet";
+// import SettingsInputComponentIcon from "@mui/icons-material/SettingsInputComponent";
+// import DnsIcon from "@mui/icons-material/Dns";
 import AboutMe from "../../../pages/AboutMe/AboutMe";
 import Cv from "../../../pages/Cv/Cv";
-import MachineLearning from "../../../pages/MachineLearning/MachineLearning";
-import Hosting from "../../../pages/Hosting/Hosting";
+// import MachineLearning from "../../../pages/MachineLearning/MachineLearning";
+// import Hosting from "../../../pages/Hosting/Hosting";
 import Home from "../../../pages/Home/Home";
-import Functions from "../../../pages/Functions/Functions";
-import Database from "../../../pages/Database/Database";
-import Storage from "../../../pages/Storage/Storage";
+// import Functions from "../../../pages/Functions/Functions";
+// import Database from "../../../pages/Database/Database";
+// import Storage from "../../../pages/Storage/Storage";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import HomeIcon from "@mui/icons-material/Home";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import WorkIcon from '@mui/icons-material/Work';
+import WorkIcon from "@mui/icons-material/Work";
 
 var i = 0;
 
@@ -39,12 +40,14 @@ export const mainNavbarItems = [
     icon: <LinkedInIcon />,
     label: "LinkedIn",
     route: "linkedin",
+    site: "https://www.linkedin.com/in/tgandee/",
   },
   {
     id: i++,
     icon: <GitHubIcon />,
     label: "GitHub",
     route: "github",
+    site: "https://github.com/tgandee",
   },
   {
     id: i++,
@@ -52,7 +55,7 @@ export const mainNavbarItems = [
     element: <Cv />,
     label: "CV",
     route: "cv",
-  },
+  } /*
   {
     id: i++,
     icon: <DnsIcon />,
@@ -87,5 +90,12 @@ export const mainNavbarItems = [
     element: <MachineLearning />,
     label: "Machine learning",
     route: "machine-learning",
+  },
+  */,
+  {
+    id: i++,
+    icon: <ContactPageIcon />,
+    label: "Contact Me",
+    route: "contact-me",
   },
 ];

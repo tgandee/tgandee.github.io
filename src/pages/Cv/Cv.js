@@ -1,9 +1,24 @@
 import React from "react";
-import { Box, Collapse, Divider, Grid, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material";
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import SchoolIcon from '@mui/icons-material/School';
+import {
+  Box,
+  Collapse,
+  Divider,
+  Grid,
+  Link,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Typography,
+} from "@mui/material";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import SchoolIcon from "@mui/icons-material/School";
 import { courses } from "./courses";
+import ExternalSite from "../../components/ExternalSite/ExternalSite";
+import { useState } from "react";
+// import { Link } from "react-router-dom";
 
 const Line = () => {
   return (
@@ -14,7 +29,6 @@ const Line = () => {
 };
 
 const Education = () => {
-
   const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
@@ -38,11 +52,12 @@ const Education = () => {
             <Typography variant="h6" align="left">
               Master of Science in Computer Science
             </Typography>
-            <List sx={{ listStyleType: 'disc', pl: 2 }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                Thesis: Improving the Accessibility of Causal Modeling through Deep Learning
+            <List sx={{ listStyleType: "disc", pl: 2 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                Thesis: Improving the Accessibility of Causal Modeling through
+                Deep Learning
               </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>GPA: 4.00</ListItem>
+              <ListItem sx={{ display: "list-item" }}>GPA: 4.00</ListItem>
             </List>
           </Grid>
           <Grid item xs={3} md={3} lg={3}>
@@ -72,19 +87,23 @@ const Education = () => {
       <Grid item xs={12}>
         <Grid container spacing={2}>
           <Grid item xs={9} md={8} lg={8}>
-            <List sx={{ listStyleType: 'disc', pl: 2 }}>
-              <ListItem sx={{ display: 'list-item' }}>
+            <List sx={{ listStyleType: "disc", pl: 2 }}>
+              <ListItem sx={{ display: "list-item" }}>
                 Capstone: NAAT Database
               </ListItem>
-              <List sx={{ listStyleType: 'circle', pl: 4 }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  Developed closely with the Myaamia Center to inherit a Laravel website for the Nipwaayoni Acquisition & Assessment team (NAAT)
+              <List sx={{ listStyleType: "circle", pl: 4 }}>
+                <ListItem sx={{ display: "list-item" }}>
+                  Developed closely with the Myaamia Center to inherit a Laravel
+                  website for the Nipwaayoni Acquisition & Assessment team
+                  (NAAT)
                 </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  Implemented a customized user-management system to meet client's deliverables, including access levels
+                <ListItem sx={{ display: "list-item" }}>
+                  Implemented a customized user-management system to meet
+                  client's deliverables, including access levels
                 </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  Handled confidential data of human subjects under IRB certification
+                <ListItem sx={{ display: "list-item" }}>
+                  Handled confidential data of human subjects under IRB
+                  certification
                 </ListItem>
               </List>
             </List>
@@ -104,9 +123,10 @@ const Education = () => {
 
       <Grid item lg={6}>
         <List
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+          sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
           component="nav"
-          aria-labelledby="nested-list-subheader">
+          aria-labelledby="nested-list-subheader"
+        >
           <ListItemButton onClick={handleClick}>
             <ListItemIcon>
               <SchoolIcon />
@@ -118,7 +138,9 @@ const Education = () => {
             <List component="div" disablePadding>
               {courses.map((item, index) => (
                 <ListItemButton sx={{ pl: 4 }}>
-                  <ListItemText primary={"CSE " + item.id + ": " + item.label} />
+                  <ListItemText
+                    primary={"CSE " + item.id + ": " + item.label}
+                  />
                 </ListItemButton>
               ))}
             </List>
@@ -164,25 +186,27 @@ const Experience = () => {
             </Typography>
           </Grid>
           <Grid item xs={9} md={9} lg={9}>
-            <List sx={{ listStyleType: 'disc', pl: 2 }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                Developed and maintained company software, with a front-end in COBOL to the back-end
-                in SSMS
+            <List sx={{ listStyleType: "disc", pl: 2 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                Developed and maintained company software, with a front-end in
+                COBOL to the back-end in SSMS
               </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                Gained experience with integrating third-party APIs through protocols like SOAP and WSDL,
-                and implemented these in SSMS through .NET CLRs
+              <ListItem sx={{ display: "list-item" }}>
+                Gained experience with integrating third-party APIs through
+                protocols like SOAP and WSDL, and implemented these in SSMS
+                through .NET CLRs
               </ListItem>
             </List>
           </Grid>
         </Grid>
       </Grid>
-
     </Grid>
   );
 };
 
 const Research = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Grid container sx={{ p: 3 }} spacing={2}>
       <Grid item xs={9}>
@@ -190,25 +214,39 @@ const Research = () => {
           Research
         </Typography>
         <Typography variant="h5" align="left" sx={{ pt: 1, pb: 1 }}>
-        Publications
-      </Typography>
-      <List sx={{ listStyleType: 'disc', pl: 2 }}>
-      <ListItem sx={{ display: 'list-item' }}>
-          In process: Tyler J. Gandee, Philippe J. Giabbanelli. Orchestrating sentences about a concept map into meaningful paragraphs
-        </ListItem>
+          Publications
+        </Typography>
+        <List sx={{ listStyleType: "disc", pl: 2 }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <>In process: Tyler J. Gandee, </>
+            <Link
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Philippe J. Giabbanelli
+            </Link>
+            . Orchestrating sentences about a concept map into meaningful
+            paragraphs
+          </ListItem>
         </List>
       </Grid>
+      <ExternalSite
+        setOpen={setOpen}
+        open={open}
+        site={"https://scholar.google.com/citations?hl=en&user=7YilOHoAAAAJ"}
+      />
     </Grid>
   );
 };
 
 const Cv = () => {
-
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container sx={{ p: 3 }} spacing={2}>
-
         <Grid item xs={12} align="center">
           <Typography variant="h1" sx={{ p: 3 }}>
             Resume / CV
@@ -226,9 +264,8 @@ const Cv = () => {
         <Line />
 
         <Research />
-
       </Grid>
-    </Box >
+    </Box>
   );
 };
 
