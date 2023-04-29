@@ -1,5 +1,5 @@
 var hour = new Date().getHours();
-var mode = hour >= 18 || hour <= 6 ? "dark" : "light";
+export var mode = hour >= 18 || hour <= 6 ? "dark" : "light";
 
 export const darkStyles = {
   palette: {

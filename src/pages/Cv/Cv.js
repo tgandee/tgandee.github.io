@@ -18,6 +18,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import { courses } from "./courses";
 import ExternalSite from "../../components/ExternalSite/ExternalSite";
 import { useState } from "react";
+import { mode } from "../../components/styles";
 // import { Link } from "react-router-dom";
 
 const Line = () => {
@@ -220,6 +221,7 @@ const Research = () => {
           <ListItem sx={{ display: "list-item" }}>
             <>In process: Tyler J. Gandee, </>
             <Link
+              color={mode === "dark" ? "lightblue" : ""}
               variant="link"
               component={Link}
               onClick={() => {
