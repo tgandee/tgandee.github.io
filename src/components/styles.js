@@ -83,11 +83,12 @@ export const aboutMeStyles = {
 
 export const cardStyles = {
   card: {
-    height: 500,
-    maxWidth: 400,
+    // height: 550,
+    // minHeight: 592,
+    maxWidth: 345,
   },
   img: {
-    height: 300,
+    height: 250,
   },
   variant: "h5",
 };
