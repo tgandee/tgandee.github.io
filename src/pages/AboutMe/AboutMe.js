@@ -106,7 +106,7 @@ const games = (
           In my free time, I love getting deep into lore-intensive games e.g.
           FromSoftware titles, the Halo series, Bethesda titles, and more. My
           next game to pick up will likely be Star Wars: Jedi Survivor. I also
-          occasionally stream on Twitch to put myself for anyone everyone to
+          occasionally stream on Twitch to put myself out there for everyone to
           see.
         </Typography>
       </CardContent>
@@ -129,9 +129,9 @@ const golf = (
         </Typography>
         <Typography variant="body2" color="text.secondary">
           More recently, I have been getting really into Golf. I love the focus
-          on consistency and the drive to get better every time. I fear not the
-          one whole practices 100 swings one time, but the one who practices 1
-          swing 100 times.
+          on consistency and the drive to get better every time. While this is
+          not a extreme form of exercise, it gives me more reason to go outside
+          and spend time with friends.
         </Typography>
       </CardContent>
     </Card>
