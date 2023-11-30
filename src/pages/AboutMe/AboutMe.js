@@ -104,10 +104,8 @@ const games = (
         </Typography>
         <Typography variant="body2" color="text.secondary">
           In my free time, I love getting deep into lore-intensive games e.g.
-          FromSoftware titles, the Halo series, Bethesda titles, and more. My
-          next game to pick up will likely be Star Wars: Jedi Survivor. I also
-          occasionally stream on Twitch to put myself out there for everyone to
-          see.
+          FromSoftware titles, the Halo series, Bethesda titles, and more.
+          Currently, I am playing through Baldur's Gate 3 and Starfield.
         </Typography>
       </CardContent>
     </Card>
