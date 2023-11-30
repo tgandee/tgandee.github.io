@@ -22,7 +22,9 @@ const Home = () => {
             challenging problems, applying Machine learning to real-world
             applications, and explaining complicated topics in the simplest way
             possible (K.I.S.S). I am proficient in numerous languages like
-            Python, C++, C#, Java, Javascript, SQL, and COBOL!
+            Python, C++, C#, Java, Javascript, SQL, and COBOL! I'm looking for
+            work in the industry in ML or Cybersecurity,
+            starting no earlier than the summer of 2024.
             <br />
             <br />
             Feel free to browse around, and contact me for any questions or
