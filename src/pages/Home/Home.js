@@ -23,7 +23,8 @@ const Home = () => {
             applications, and explaining complicated topics in the simplest way
             possible (K.I.S.S). I am proficient in numerous languages like
             Python, C++, C#, Java, Javascript, SQL, and COBOL! I'm looking for
-            work in the industry in ML or Cybersecurity,
+            work in software-related fields (e.g. computer science,
+            data science, modeling & simulation, or any related field),
             starting no earlier than the summer of 2024.
             <br />
             <br />
