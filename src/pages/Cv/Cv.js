@@ -1,6 +1,9 @@
 import React from "react";
 import {
   Box,
+  Card,
+  CardContent,
+  CardMedia,
   Collapse,
   Divider,
   Grid,
@@ -19,6 +22,10 @@ import { courses } from "./courses";
 import ExternalSite from "../../components/ExternalSite/ExternalSite";
 import { useState } from "react";
 import { mode } from "../../components/styles";
+import { vaStyles } from "../../components/styles";
+import va1 from "./images/VA_1.png";
+import va2 from "./images/VA_2.png";
+import va3 from "./images/VA_3.png";
 // import { Link } from "react-router-dom";
 
 const Line = () => {
@@ -207,6 +214,7 @@ const Experience = () => {
 
 const Research = () => {
   const [open, setOpen] = useState(false);
+  var [site, setSite] = useState("");
 
   return (
     <Grid container sx={{ p: 3 }} spacing={2}>
@@ -215,11 +223,11 @@ const Research = () => {
           Research
         </Typography>
         <Typography variant="h5" align="left" sx={{ pt: 1, pb: 1 }}>
-          Publications
+          Projects & Publications
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 2 }}>
           <ListItem sx={{ display: "list-item" }}>
-            <>In process: Tyler J. Gandee, </>
+            <>In review: Tyler J. Gandee, </>
             <Link
               color={mode === "dark" ? "lightblue" : ""}
               variant="link"
@@ -231,16 +239,151 @@ const Research = () => {
             >
               Philippe J. Giabbanelli
             </Link>
-            . Orchestrating sentences about a concept map into meaningful
-            paragraphs
+            . Combining Natural Language Generation and Graph Algorithms to
+            Orchestrate Explanations of Causal Maps as Meaningful Paragraphs
+            <List sx={{ listStyleType: "circle", pl: 4 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                This project focuses on converting large causal maps into
+                explainable text with the use of fine-tuning an OpenAI GPT model
+                to generate a list of sentences (
+                <Link
+                  color={mode === "dark" ? "lightblue" : ""}
+                  variant="link"
+                  component={Link}
+                  onClick={() => {
+                    setSite("https://ieeexplore.ieee.org/document/10015446");
+                    setOpen(true);
+                  }}
+                  underline="hover"
+                >
+                  Shrestha et al.
+                </Link>
+                ), then bundling those sentences to generate paragraphs through
+                base GPT models, e.g. GPT-3.5 Turbo. We develop network
+                traversal algorithms, and run a parameter grid search for bundle
+                size (how many sentences per call) and temperature (variability
+                of GPT).
+              </ListItem>
+            </List>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <>In process: Tyler J. Gandee, </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?hl=en&user=7YilOHoAAAAJ"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Philippe J. Giabbanelli
+            </Link>
+            . Comparing Automatic Text Summarization with Graph Simplification
+            Algorithms for Explanatory Models
+            <List sx={{ listStyleType: "circle", pl: 4 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                This project expands on our first project by comparing text
+                summarization algorithms and models with graph Simplification
+                methods. We developed numerous algorithms on how to split large
+                texts to fall within character/token limits, and experimented
+                with extractive (Natural Language Processing) and abstractive
+                (Natural Language Generation) summarization models. We compare
+                these methods with graph simplification models, which simplify
+                the causal map first, then generate text.
+              </ListItem>
+            </List>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <>In process: Tyler J. Gandee, Sean Glaze, </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?hl=en&user=7YilOHoAAAAJ"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Philippe J. Giabbanelli
+            </Link>
+            . Designing a Visual Analytics Environment to Combat Information
+            Overload of Large Causal Maps
+            <List sx={{ listStyleType: "circle", pl: 4 }}>
+              <ListItem sx={{ display: "list-item" }}>
+                This project is the culmination of our previous works. Given a
+                causal map, its detailed textual representation, and its
+                corresponding summarization, we develop an application that
+                links all apsects together to provide details-on-demand for the
+                user. We hope that in this project, along with all our other
+                contributions, create a medium to traverse causal maps without
+                experiencing information overload. We use OpenAI Embeddings for
+                an advanced word search to extract referenced nodes from
+                sentences, and provide a DALL-E image to provide a visual
+                representation of the text.
+              </ListItem>
+              <Card sx={vaStyles.card}>
+                <CardMedia
+                  component="img"
+                  sx={vaStyles.img}
+                  image={va1}
+                  title="Visual Analytics: User clicked on the first summary paragraph."
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    After importing your file, clicking on a summary's paragraph
+                    shows the detailed text, a generated image, along with the
+                    corresponding causal map.
+                  </Typography>
+                </CardContent>
+              </Card>
+              <br></br>
+              <Card sx={vaStyles.card}>
+                <CardMedia
+                  component="img"
+                  sx={vaStyles.img}
+                  image={va2}
+                  title="Visual Analytics: User clicked on the first detailed sentence."
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    The user can then select sentences, of which corresponding
+                    nodes will be highlighted, which hides all other nodes and
+                    edges.
+                  </Typography>
+                </CardContent>
+              </Card>
+              <br></br>
+              <Card sx={vaStyles.card}>
+                <CardMedia
+                  component="img"
+                  sx={vaStyles.img}
+                  image={va3}
+                  title="Visual Analytics: User clicked on the 'Substance abuse' node."
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    The user can also click on specific nodes to get its direct
+                    subgraph.
+                  </Typography>
+                </CardContent>
+              </Card>
+              <ListItem sx={{ display: "list-item" }}>
+                This project is ongoing, and there are many more features we are
+                looking into, e.g. an advanced word search with user input, and
+                the ability to select multiple nodes and subgraphs.
+              </ListItem>
+            </List>
           </ListItem>
         </List>
       </Grid>
-      <ExternalSite
-        setOpen={setOpen}
-        open={open}
-        site={"https://scholar.google.com/citations?hl=en&user=7YilOHoAAAAJ"}
-      />
+      <ExternalSite setOpen={setOpen} open={open} site={site} />
     </Grid>
   );
 };

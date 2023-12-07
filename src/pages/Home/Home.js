@@ -19,13 +19,13 @@ const Home = () => {
           <Typography variant="h5" align="left">
             Hey there! I'm Tyler. I am a graduate student at Miami University
             working towards my M.s. in Computer Science. I love solving
-            challenging problems, applying Machine learning to real-world
+            challenging problems, applying machine learning to real-world
             applications, and explaining complicated topics in the simplest way
-            possible (K.I.S.S). I am proficient in numerous languages like
-            Python, C++, C#, Java, Javascript, SQL, and COBOL! I'm looking for
-            work in software-related fields (e.g. computer science, data
-            science, modeling & simulation, or any related field), starting no
-            earlier than the summer of 2024.
+            possible for experts and non-experts alike. I am proficient in
+            numerous languages, e.g. Python, C++, C#, Java, Javascript, SQL, and
+            COBOL! I'm looking for work in software-related fields (e.g.
+            computer science, data science, modeling & simulation, or any
+            related field), starting no earlier than the summer of 2024.
             <br />
             <br />
             Feel free to browse around, and contact me for any questions or

@@ -92,3 +92,16 @@ export const cardStyles = {
   },
   variant: "h5",
 };
+
+export const vaStyles = {
+  card: {
+    // height: 550,
+    // minHeight: 592,
+    maxWidth: 1920,
+    alignItems: "center",
+  },
+  img: {
+    maxHeight: 1080,
+  },
+  variant: "h5",
+};
