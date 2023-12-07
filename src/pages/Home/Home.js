@@ -23,10 +23,9 @@ const Home = () => {
             applications, and explaining complicated topics in the simplest way
             possible (K.I.S.S). I am proficient in numerous languages like
             Python, C++, C#, Java, Javascript, SQL, and COBOL! I'm looking for
-            work in the industry in ML or Cybersecurity, I'm looking for work in
-            the computer science domain, which includes (but not limited to)
-            data analytics/engineering/science, software engineering, AI/ML, and
-            information security, starting in the summer of 2024.
+            work in software-related fields (e.g. computer science, data
+            science, modeling & simulation, or any related field), starting no
+            earlier than the summer of 2024.
             <br />
             <br />
             Feel free to browse around, and contact me for any questions or
