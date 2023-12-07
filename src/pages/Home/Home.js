@@ -18,13 +18,15 @@ const Home = () => {
         <Grid item xs={12} sm={12} md={12}>
           <Typography variant="h5" align="left">
             Hey there! I'm Tyler. I am a graduate student at Miami University
-            working towards my MSCS in Computer Science. I love solving
+            working towards my M.s. in Computer Science. I love solving
             challenging problems, applying Machine learning to real-world
             applications, and explaining complicated topics in the simplest way
             possible (K.I.S.S). I am proficient in numerous languages like
             Python, C++, C#, Java, Javascript, SQL, and COBOL! I'm looking for
-            work in the industry in ML or Cybersecurity,
-            starting no earlier than the summer of 2024.
+            work in the industry in ML or Cybersecurity, I'm looking for work in
+            the computer science domain, which includes (but not limited to)
+            data analytics/engineering/science, software engineering, AI/ML, and
+            information security, starting in the summer of 2024.
             <br />
             <br />
             Feel free to browse around, and contact me for any questions or
