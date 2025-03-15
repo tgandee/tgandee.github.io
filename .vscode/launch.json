@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        
+
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--do_train",
+                "--do_eval",
+                "--eval_test",
+                "--context_window", "0",
+                "--task", "scierc",
+                "--data_dir", "C:\\Users\\Tyler\\Downloads\\PURE\\scierc_data\\processed_data\\json\\",
+                "--model", "allenai/scibert_scivocab_uncased",
+                "--output_dir", "scierc_models/ent-scib-ctx0/",
+                "--project", "test_entity"
+        }
+    ]
+}

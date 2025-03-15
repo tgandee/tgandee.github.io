@@ -14,7 +14,8 @@ import cincinnati from "./images/cincinnati.jpg";
 import cavies from "./images/cavaliers.jpg";
 import miami from "./images/miami.jpg";
 import game from "./images/gaming.jpeg";
-import golfImg from "./images/golf.jpg";
+// import golfImg from "./images/golf.jpg";
+import half from "./images/half.jpg";
 import camelback from "./images/camelback.jpg";
 import { cardStyles } from "../../components/styles";
 
@@ -118,23 +119,30 @@ const golf = (
       <CardMedia
         component="img"
         sx={cardStyles.img}
-        image={golfImg}
-        title="Golf"
+        image={half}
+        title="Running"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Golf
+          Sports/Exercise
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          More recently, I have been getting really into Golf. I love the focus
-          on consistency and the drive to get better every time. While this is
-          not a extreme form of exercise, it gives me more reason to go outside
-          and spend time with friends.
+          2025 has been a pivotal moment in my habits, with the most significant
+          change being my exercise routine. I am currently training for a half
+          marathon, with the intention to work towards a full marathon by the
+          end of this year.
         </Typography>
       </CardContent>
     </Card>
   </Grid>
 );
+
+/*
+More recently, I have been getting really into Golf. I love the focus
+on consistency and the drive to get better every time. While this is
+not a extreme form of exercise, it gives me more reason to go outside
+and spend time with friends.
+*/
 
 const travel = (
   <Grid item xs={12} md={6} lg={4}>
@@ -150,11 +158,11 @@ const travel = (
           Traveling
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          While traveling can be expensive, I will take any opportunity I can to
-          go somewhere. I have at least driven through most most of the
-          continental states in the U.S., and have briefly visited Mexico,
-          Jamaica, and Haiti. Most recently, I traveled to Arizona to visit the
-          Grand Canyon National Park, Flagstaff, Sedona, and Phoenix.
+          I will take any opportunity I can to go travel. I have driven through
+          most most of the continental states in the U.S., visited 7 countries,
+          and visited Puerto Rico and the U.S. Virgin Islands. My goal is the
+          30-by-30 challenge: visit 30 national parks by the time I turn 30
+          (current count: 6).
         </Typography>
       </CardContent>
     </Card>

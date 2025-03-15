@@ -28,6 +28,10 @@ export const courses = [
     label: "Game Engine Design",
   },
   {
+    id: 570,
+    label: "Ethical Hacking",
+  },
+  {
     id: 532,
     label: "Machine Learning (Graduate)",
   },

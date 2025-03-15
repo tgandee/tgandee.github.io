@@ -17,15 +17,13 @@ const Home = () => {
       >
         <Grid item xs={12} sm={12} md={12}>
           <Typography variant="h5" align="left">
-            Hey there! I'm Tyler. I am a graduate student at Miami University
-            working towards my M.s. in Computer Science. I love solving
-            challenging problems, applying machine learning to real-world
-            applications, and explaining complicated topics in the simplest way
-            possible for experts and non-experts alike. I am proficient in
-            numerous languages, e.g. Python, C++, C#, Java, Javascript, SQL, and
-            COBOL! I'm looking for work in software-related fields (e.g.
-            computer science, data science, modeling & simulation, or any
-            related field), starting no earlier than the summer of 2024.
+            Hi there! I'm Tyler, an Associate Research Computer Scientist with
+            my M.S. and B.S. in Computer Science from Miami University. I love
+            solving challenging problems, applying machine learning to
+            real-world applications, and explaining complicated topics in the
+            simplest way possible for experts and non-experts alike. I am
+            proficient in numerous languages, e.g. Python, C++, C#, Java,
+            Javascript, SQL, and COBOL!
             <br />
             <br />
             Feel free to browse around, and contact me for any questions or

@@ -1,9 +1,9 @@
 import React from "react";
 import {
   Box,
-  Card,
-  CardContent,
-  CardMedia,
+  //  Card,
+  //  CardContent,
+  //  CardMedia,
   Collapse,
   Divider,
   Grid,
@@ -22,10 +22,10 @@ import { courses } from "./courses";
 import ExternalSite from "../../components/ExternalSite/ExternalSite";
 import { useState } from "react";
 import { mode } from "../../components/styles";
-import { vaStyles } from "../../components/styles";
-import va1 from "./images/VA_1.png";
-import va2 from "./images/VA_2.png";
-import va3 from "./images/VA_3.png";
+// import { vaStyles } from "../../components/styles";
+// import va1 from "./images/VA_1.png";
+// import va2 from "./images/VA_2.png";
+// import va3 from "./images/VA_3.png";
 // import { Link } from "react-router-dom";
 
 const Line = () => {
@@ -65,7 +65,7 @@ const Education = () => {
                 Thesis: Improving the Accessibility of Causal Modeling through
                 Deep Learning
               </ListItem>
-              <ListItem sx={{ display: "list-item" }}>GPA: 4.00</ListItem>
+              <ListItem sx={{ display: "list-item" }}>GPA: 3.97</ListItem>
             </List>
           </Grid>
           <Grid item xs={3} md={3} lg={3}>
@@ -166,12 +166,30 @@ const Experience = () => {
         <Typography variant="h3" sx={{ pb: 2, pt: 3 }} align="left">
           Experience
         </Typography>
-        <Typography variant="h5" align="left" sx={{ pt: 1, pb: 1 }}>
-          Quality Gold Inc.
-        </Typography>
       </Grid>
 
       <Grid item xs={12}>
+        <Typography variant="h5" align="left" sx={{ pt: 1, pb: 1 }}>
+          Air Force Research Laboratory
+        </Typography>
+        <Grid container spacing={2}>
+          <Grid item xs={9} md={9} lg={9}>
+            <Typography variant="h6" align="left">
+              Associate Research Computer Scientist
+            </Typography>
+          </Grid>
+          <Grid item xs={3} md={3} lg={3}>
+            <Typography variant="h6" align="right">
+              August 2024 - Present
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Typography variant="h5" align="left" sx={{ pt: 1, pb: 1 }}>
+          Quality Gold Inc.
+        </Typography>
         <Grid container spacing={2}>
           <Grid item xs={9} md={9} lg={9}>
             <Typography variant="h6" align="left">
@@ -180,7 +198,7 @@ const Experience = () => {
           </Grid>
           <Grid item xs={3} md={3} lg={3}>
             <Typography variant="h6" align="right">
-              May 2022 - Present
+              May 2022 - August 2024
             </Typography>
           </Grid>
           <Grid item xs={8} md={8} lg={8}>
@@ -227,44 +245,130 @@ const Research = () => {
         </Typography>
         <List sx={{ listStyleType: "disc", pl: 2 }}>
           <ListItem sx={{ display: "list-item" }}>
-            <>In review: Tyler J. Gandee, </>
+            <>Tyler J. Gandee, </>
             <Link
               color={mode === "dark" ? "lightblue" : ""}
               variant="link"
               component={Link}
               onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?user=7YilOHoAAAAJ&hl=en&oi=ao"
+                );
                 setOpen(true);
               }}
               underline="hover"
             >
               Philippe J. Giabbanelli
             </Link>
-            . Combining Natural Language Generation and Graph Algorithms to
-            Orchestrate Explanations of Causal Maps as Meaningful Paragraphs
-            <List sx={{ listStyleType: "circle", pl: 4 }}>
-              <ListItem sx={{ display: "list-item" }}>
-                This project focuses on converting large causal maps into
-                explainable text with the use of fine-tuning an OpenAI GPT model
-                to generate a list of sentences (
-                <Link
-                  color={mode === "dark" ? "lightblue" : ""}
-                  variant="link"
-                  component={Link}
-                  onClick={() => {
-                    setSite("https://ieeexplore.ieee.org/document/10015446");
-                    setOpen(true);
-                  }}
-                  underline="hover"
-                >
-                  Shrestha et al.
-                </Link>
-                ), then bundling those sentences to generate paragraphs through
-                base GPT models, e.g. GPT-3.5 Turbo. We develop network
-                traversal algorithms, and run a parameter grid search for bundle
-                size (how many sentences per call) and temperature (variability
-                of GPT).
-              </ListItem>
-            </List>
+            <>. </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://link.springer.com/chapter/10.1007/978-3-031-75599-6_25"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Combining Natural Language Generation and Graph Algorithms to
+              Explain Causal Maps Through Meaningful Paragraphs
+            </Link>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <>Tyler J. Gandee, Sean C. Glaze, and </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?user=7YilOHoAAAAJ&hl=en&oi=ao"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Philippe J. Giabbanelli
+            </Link>
+            <>. </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite("https://www.mdpi.com/2227-7390/12/13/1946");
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              A Visual Analytics Environment for Navigating Large Conceptual
+              Models by Leveraging Generative Artificial Intelligence
+            </Link>
+          </ListItem>
+          <ListItem sx={{ display: "list-item" }}>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?user=7YilOHoAAAAJ&hl=en&oi=ao"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Philippe J. Giabbanelli
+            </Link>
+            <>, Tyler J. Gandee, </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?user=1XYgV6kAAAAJ&hl=en"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Ameeta Agrawal
+            </Link>
+            <>, and </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://scholar.google.com/citations?user=wdvcy7gAAAAJ&hl=en&oi=ao"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Niyousha Hosseinichimeh
+            </Link>
+            <>. </>
+            <Link
+              color={mode === "dark" ? "lightblue" : ""}
+              variant="link"
+              component={Link}
+              onClick={() => {
+                setSite(
+                  "https://journals.sagepub.com/doi/full/10.1177/15705838241304102"
+                );
+                setOpen(true);
+              }}
+              underline="hover"
+            >
+              Benchmarking and Assessing Transformations Between Text and Causal
+              Maps via Large Language Models
+            </Link>
           </ListItem>
           <ListItem sx={{ display: "list-item" }}>
             <>In process: Tyler J. Gandee, </>
@@ -294,90 +398,6 @@ const Research = () => {
                 (Natural Language Generation) summarization models. We compare
                 these methods with graph simplification models, which simplify
                 the causal map first, then generate text.
-              </ListItem>
-            </List>
-          </ListItem>
-          <ListItem sx={{ display: "list-item" }}>
-            <>In process: Tyler J. Gandee, Sean Glaze, </>
-            <Link
-              color={mode === "dark" ? "lightblue" : ""}
-              variant="link"
-              component={Link}
-              onClick={() => {
-                setSite(
-                  "https://scholar.google.com/citations?hl=en&user=7YilOHoAAAAJ"
-                );
-                setOpen(true);
-              }}
-              underline="hover"
-            >
-              Philippe J. Giabbanelli
-            </Link>
-            . Designing a Visual Analytics Environment to Combat Information
-            Overload of Large Causal Maps
-            <List sx={{ listStyleType: "circle", pl: 4 }}>
-              <ListItem sx={{ display: "list-item" }}>
-                This project is the culmination of our previous works. Given a
-                causal map, its detailed textual representation, and its
-                corresponding summarization, we develop an application that
-                links all apsects together to provide details-on-demand for the
-                user. We hope that in this project, along with all our other
-                contributions, create a medium to traverse causal maps without
-                experiencing information overload. We use OpenAI Embeddings for
-                an advanced word search to extract referenced nodes from
-                sentences, and provide a DALL-E image to provide a visual
-                representation of the text.
-              </ListItem>
-              <Card sx={vaStyles.card}>
-                <CardMedia
-                  component="img"
-                  sx={vaStyles.img}
-                  image={va1}
-                  title="Visual Analytics: User clicked on the first summary paragraph."
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    After importing your file, clicking on a summary's paragraph
-                    shows the detailed text, a generated image, along with the
-                    corresponding causal map.
-                  </Typography>
-                </CardContent>
-              </Card>
-              <br></br>
-              <Card sx={vaStyles.card}>
-                <CardMedia
-                  component="img"
-                  sx={vaStyles.img}
-                  image={va2}
-                  title="Visual Analytics: User clicked on the first detailed sentence."
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    The user can then select sentences, of which corresponding
-                    nodes will be highlighted, which hides all other nodes and
-                    edges.
-                  </Typography>
-                </CardContent>
-              </Card>
-              <br></br>
-              <Card sx={vaStyles.card}>
-                <CardMedia
-                  component="img"
-                  sx={vaStyles.img}
-                  image={va3}
-                  title="Visual Analytics: User clicked on the 'Substance abuse' node."
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    The user can also click on specific nodes to get its direct
-                    subgraph.
-                  </Typography>
-                </CardContent>
-              </Card>
-              <ListItem sx={{ display: "list-item" }}>
-                This project is ongoing, and there are many more features we are
-                looking into, e.g. an advanced word search with user input, and
-                the ability to select multiple nodes and subgraphs.
               </ListItem>
             </List>
           </ListItem>
